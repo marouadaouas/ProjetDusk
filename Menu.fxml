@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.MenuController">
+   <children>
+      <ImageView fitHeight="488.0" fitWidth="682.0" layoutY="-18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/logo.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="CentreEsthBtn" layoutX="27.0" layoutY="101.0" mnemonicParsing="false" onAction="#gererCentreEsth" prefHeight="122.0" prefWidth="231.0" text="Gestion Centre Esthetique">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="SoinBtn" layoutX="256.0" layoutY="101.0" mnemonicParsing="false" onAction="#gererSoins" prefHeight="122.0" prefWidth="231.0" text="Gestion des soins" textFill="#222020">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="packageBtn" layoutX="27.0" layoutY="223.0" mnemonicParsing="false" onAction="#gererPackage" prefHeight="122.0" prefWidth="231.0" text="Gestion de packages">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Label layoutX="265.0" layoutY="33.0" text="Coin Beauté" textFill="#60a175">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="258.0" layoutY="223.0" mnemonicParsing="false" onAction="#GestionEsthBtn" prefHeight="122.0" prefWidth="231.0" text="Gestion des esthéticiennes">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor></Button>
+   </children>
+</AnchorPane>

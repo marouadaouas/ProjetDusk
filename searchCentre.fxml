@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.SearchCentreController">
+   <children>
+      <TextField fx:id="motCle" layoutX="191.0" layoutY="102.0" onAction="#motCle" />
+      <TableView fx:id="tabCentres" layoutX="120.0" layoutY="157.0" onMouseClicked="#returnRechercheCentre" prefHeight="197.0" prefWidth="295.0">
+        <columns>
+          <TableColumn fx:id="nomCentreRecherche" prefWidth="110.0" text="Nom" />
+          <TableColumn fx:id="AdresseCentreRecherche" prefWidth="83.0" text="Adresse" />
+            <TableColumn fx:id="TelephoneCentreRecherche" prefWidth="101.0" text="Telephone" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

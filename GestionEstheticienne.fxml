@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.GestionEstheticienneController">
+   <children>
+      <ImageView fitHeight="473.0" fitWidth="663.0" layoutX="-20.0" layoutY="-18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/logo.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="89.0" layoutY="100.0" mnemonicParsing="false" onAction="#ajouterEstheticienne" text="ajouter esthéticienne" />
+      <Button layoutX="424.0" layoutY="113.0" mnemonicParsing="false" onAction="#afficherEstheticiennes" text="afficher esthéticiennes" />
+   </children>
+</AnchorPane>

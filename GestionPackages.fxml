@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.GestionPackagesController">
+   <children>
+      <ImageView fitHeight="451.0" fitWidth="614.0" layoutY="-9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="201.0" layoutY="30.0" text="Gestion de packages" textFill="#38a15b">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="AjoutPackageBtn" layoutX="57.0" layoutY="143.0" mnemonicParsing="false" onAction="#AjoutPackageBtn" prefHeight="103.0" prefWidth="197.0" text="Ajouter des packages" />
+      <Button fx:id="AffichagePackageBtn" layoutX="254.0" layoutY="144.0" mnemonicParsing="false" onAction="#AffichagePackageBtn" prefHeight="103.0" prefWidth="166.0" text="Afficher les packages" />
+   </children>
+</AnchorPane>
