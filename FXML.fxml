@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" minWidth="-Infinity" prefHeight="589.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.FXMLController">
+   <children>
+      <ImageView fitHeight="648.0" fitWidth="900.0" layoutX="31.0" layoutY="-139.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Desktop/Sans%20titre%20-%202.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="BAjouter" layoutX="41.0" layoutY="50.0" mnemonicParsing="false" onAction="#ajouter_carte" prefHeight="25.0" prefWidth="121.0" text="Ajouter" textFill="#221a19">
+         <effect>
+            <DropShadow color="#281111" />
+         </effect>
+      </Button>
+      <Accordion layoutX="113.0" layoutY="101.0" />
+      <Label layoutX="14.0" layoutY="105.0" prefHeight="17.0" prefWidth="95.0" text="Numero de votre carte" />
+      <TextField fx:id="num_carteEntry" layoutX="118.0" layoutY="101.0" />
+      <Label layoutX="14.0" layoutY="144.0" prefHeight="17.0" prefWidth="121.0" text="Propriétaire" />
+      <TextField fx:id="proprietereEntry" layoutX="102.0" layoutY="140.0" />
+      <Label layoutX="12.0" layoutY="185.0" text="Date_expiration" />
+      <Label layoutX="21.0" layoutY="238.0" text="Mot de pass" />
+      <TextField fx:id="pass_carteEntry" layoutX="102.0" layoutY="234.0" />
+      <Label layoutX="31.0" layoutY="278.0" text="Solde" />
+      <TextField fx:id="SoldeEntry" layoutX="75.0" layoutY="282.0" />
+      <Label layoutX="28.0" layoutY="385.0" text="Type" />
+      <TextField fx:id="typeEntry" layoutX="88.0" layoutY="381.0" />
+      <Label layoutX="21.0" layoutY="333.0" text="Banque" />
+      <TextField fx:id="banqueEntry" layoutX="75.0" layoutY="338.0" />
+      <JFXDatePicker fx:id="dateExEntry" layoutX="107.0" layoutY="181.0" />
+      <Line endX="100.0" layoutX="-93.0" layoutY="41.0" startX="900.0" stroke="#12c7e3" />
+      <Line endX="100.0" layoutX="-93.0" layoutY="83.0" startX="900.0" stroke="#12c7e3" />
+      <TableView fx:id="tbCarte" layoutX="324.0" layoutY="152.0" prefHeight="362.0" prefWidth="509.0">
+        <columns>
+          <TableColumn fx:id="tb_num" prefWidth="75.0" text="num_carte" />
+          <TableColumn fx:id="tbProp" prefWidth="75.0" text="prop" />
+            <TableColumn fx:id="tbDate" prefWidth="75.0" text="date_esp" />
+            <TableColumn fx:id="tbMdp" prefWidth="75.0" text="mdp" />
+            <TableColumn fx:id="tbSolde" prefWidth="75.0" text="solde" />
+            <TableColumn fx:id="tbBanq" prefWidth="75.0" text="Banque" />
+            <TableColumn fx:id="tbType" prefWidth="75.0" text="type" />
+        </columns>
+      </TableView>
+      <Label layoutX="401.0" layoutY="105.0" text="Liste des cartes bancaires ">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
